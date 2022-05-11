@@ -4,15 +4,17 @@ import java.util.Date;
 
 public class Student {
     private String name;
-    private Date birthDay;
+    private int age;
     private String address;
     private float grade;
+    private int id;
 
-    public Student(String name, Date birthDay, String address, float grade) {
+    public Student(String name,int id, int age, String address, float grade) {
         this.name = name;
-        this.birthDay = birthDay;
+        this.age = age;
         this.address = address;
         this.grade = grade;
+        this.id = id;
     }
 
     public String getName() {
@@ -23,12 +25,20 @@ public class Student {
         this.name = name;
     }
 
-    public Date getBirthDay() {
-        return birthDay;
+    public int getAge() {
+        return age;
     }
 
-    public void setBirthDay(Date birthDay) {
-        this.birthDay = birthDay;
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getAddress() {
